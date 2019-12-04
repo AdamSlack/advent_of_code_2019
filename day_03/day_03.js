@@ -36,6 +36,7 @@ const wireA = computeAllPoints(firstWireVectors)
 const wireB = computeAllPoints(secondWireVectors)
 
 const hits = []
+console.log('wireA', wireA.length, 'wireB', wireB.length)
 for( let ap of wireA) {
     for (let bp of wireB) {
         if(ap[0] === bp[0] && ap[1] === bp[1]) {
