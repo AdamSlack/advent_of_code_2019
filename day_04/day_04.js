@@ -31,6 +31,3 @@ const noTriples = withinRange.filter((num) => `${num}`.match(doublesNoTriples))
 console.log('allowing Triples:', withinRange.length)
 console.log('without Triples:', noTriples.length)
 
-const foo = `123456789`
-console.log(regexString)
-console.log(doublesNoTriples.test(foo))
