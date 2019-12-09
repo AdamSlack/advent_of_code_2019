@@ -13,8 +13,8 @@ let output = -1
 
 const charMap = {
     '2': ' ',
-    '1': 'X',
-    '0': '.'
+    '1': 'XX',
+    '0': '..'
 }
 
 const countDigits = (layer, desiredDigit) => layer.reduce((acc, actualDigit) =>  desiredDigit == actualDigit ? acc + 1 : acc,0)
@@ -47,5 +47,5 @@ console.log('--- PART 2 ---')
 
 const zbuffString = zbuff.join('')
 console.log('Z-Buffer string length:', zbuffString.length)
-const rows = zbuffString.match(/.{25}/g)
+const rows = zbuffString.match(/.{50}/g)
 console.log(rows)
