@@ -19,6 +19,7 @@ const charMap = {
 
 const countDigits = (layer, desiredDigit) => layer.reduce((acc, actualDigit) =>  desiredDigit == actualDigit ? acc + 1 : acc,0)
 const zbuff = Array.from({length: 150}, () => ' ')
+
 for(let layer of layers) {
     const digits = layer.split('')
     const zeros = countDigits(digits, 0)
